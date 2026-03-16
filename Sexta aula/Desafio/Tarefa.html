@@ -113,6 +113,7 @@ background-color: aliceblue;
 
     .Caixa1{
         border: 2px solid black;
+        flex: 1;
         display: flex;
         width: 30%;
         margin: 5px;
@@ -123,6 +124,7 @@ background-color: aliceblue;
 
     .Caixa2{
         border: 2px solid black;
+        flex: 1;
         display: flex;
         width: 30%;
         margin: 5px;
@@ -133,6 +135,7 @@ background-color: aliceblue;
 
     .Caixa3{
         border: 2px solid black;
+        flex: 1;
         display: flex;
         width: 30%;
         margin: 5px;
@@ -150,6 +153,31 @@ background-color: aliceblue;
     .caixas{
         display: flex;
         flex-direction: row;
+    }
+
+    .sugestão{
+        display: flex;
+        justify-content: center;
+        color: brown;
+
+    }
+
+    .DIV5{
+        border: 2px solid brown;
+        margin: 10px 0px;
+        background-color: aquamarine;
+    }
+
+    .Botão{
+        display: flex;
+        align-items: center;
+        background-color: brown;
+        color: azure;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        margin: 10px 400px;
+        
     }
     
 </style>
@@ -248,6 +276,37 @@ background-color: aliceblue;
 
     </Div>
 </div>
+
+<form action=""></form>
+<Div class="DIV5">
+    <h2 class="sugestão">Envie sua sugestão</h2>
+
+    <div>
+        <label class="Nome" for="Nome">Nome:</label>
+        <br>
+        <input type="text" name="Nome" id="Nome" placeholder="Digite aqui!">
+    </div>
+<br>
+
+    <div>
+        <label class="Email" for="Email">Email:</label>
+        <br>
+        <input type="email" name="Email" id="Email" placeholder="Ex: joao@gmail.com">
+    </div>
+    <br>
+
+    <div>
+        <label for="text area"></label>
+        Comentarios:
+        <br>
+        <textarea class="textarea" name="text area" id="textarea" rows="10" cols="100" placeholder="Digite aqui" maxlength="100" required></textarea>
+    </div>
+<br>
+<div>
+    <button class="Botão"   type="submit">Enviar</button>
+</div>
+</Div>
+</form>
 
 
     
